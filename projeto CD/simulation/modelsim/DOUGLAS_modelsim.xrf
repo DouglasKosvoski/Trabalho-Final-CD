@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/aluno/Desktop/projeto CD/DOUGLAS.bdf
+source_file = 1, C:/altera/13.0/output_files/Chain1.cdf
+source_file = 1, C:/altera/13.0/output_files/Chain5.cdf
+source_file = 1, C:/Users/aluno/Desktop/projeto CD/output_files/Chain6.cdf
+source_file = 1, C:/Users/aluno/Desktop/projeto CD/db/DOUGLAS.cbx.xml
+design_name = DOUGLAS
+instance = comp, \KEY[2]~I\, KEY[2], DOUGLAS, 1
+instance = comp, \KEY[0]~I\, KEY[0], DOUGLAS, 1
+instance = comp, \KEY[1]~I\, KEY[1], DOUGLAS, 1
+instance = comp, \inst2~0\, inst2~0, DOUGLAS, 1
+instance = comp, \KEY[3]~I\, KEY[3], DOUGLAS, 1
+instance = comp, \inst6~0\, inst6~0, DOUGLAS, 1
+instance = comp, \LEDG[1]~I\, LEDG[1], DOUGLAS, 1
+instance = comp, \LEDG[0]~I\, LEDG[0], DOUGLAS, 1

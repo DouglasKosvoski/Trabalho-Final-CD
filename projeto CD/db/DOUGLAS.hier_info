@@ -1,0 +1,9 @@
+|DOUGLAS
+LEDG[0] <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[1] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+KEY[0] => inst8.IN0
+KEY[1] => inst5.IN0
+KEY[2] => inst5.IN1
+KEY[3] => inst.IN0
+
+

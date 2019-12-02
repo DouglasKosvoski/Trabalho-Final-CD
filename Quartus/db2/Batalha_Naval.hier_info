@@ -1,0 +1,153 @@
+|MAIN
+ERROU <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+DISPARO => inst12.IN0
+DISPARO => inst11.IN0
+A2 => inst24.IN0
+C2 => inst26.IN0
+B2 => inst27.IN0
+D2 => inst25.IN0
+A => inst4.IN1
+A => inst.IN1
+B => inst5.IN1
+B => inst1.IN1
+C => inst6.IN1
+C => inst2.IN1
+D => inst7.IN1
+D => inst3.IN1
+A1 => inst28.IN0
+B1 => inst31.IN0
+C1 => inst30.IN0
+D1 => inst29.IN0
+ACERTOU <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MAIN|C1:inst19
+C1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => inst8.IN0
+pin_name1 => inst3.IN0
+pin_name1 => inst4.IN0
+pin_name1 => inst10.IN0
+pin_name2 => inst9.IN0
+pin_name2 => inst4.IN1
+pin_name3 => gdfx_temp0.IN0
+pin_name4 => gdfx_temp0.IN1
+
+
+|MAIN|C2:inst20
+pin_name4 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => inst16.IN0
+pin_name1 => inst15.IN0
+pin_name1 => inst12.IN0
+pin_name2 => inst17.IN0
+pin_name2 => inst13.IN0
+pin_name2 => inst14.IN0
+pin_name2 => inst.IN0
+pin_name2 => inst1.IN1
+pin_name5 => inst4.IN2
+pin_name5 => inst2.IN2
+pin_name5 => inst10.IN0
+pin_name3 => inst2.IN1
+pin_name3 => inst3.IN2
+pin_name3 => inst.IN1
+pin_name3 => inst11.IN0
+
+
+|MAIN|C3:inst21
+pin_name1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 => inst.IN0
+pin_name2 => inst7.IN0
+pin_name2 => inst6.IN0
+pin_name2 => inst5.IN0
+pin_name4 => inst9.IN1
+pin_name4 => inst1.IN0
+pin_name3 => inst4.IN0
+pin_name3 => inst2.IN0
+pin_name3 => inst8.IN1
+pin_name5 => inst3.IN0
+pin_name5 => inst8.IN2
+
+
+|MAIN|C4:inst22
+pin_name5 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 => inst5.IN0
+pin_name2 => inst7.IN0
+pin_name2 => inst1.IN0
+pin_name2 => inst4.IN1
+pin_name2 => inst9.IN0
+pin_name3 => inst.IN1
+pin_name3 => inst1.IN1
+pin_name3 => inst8.IN0
+pin_name3 => inst3.IN2
+pin_name4 => inst.IN2
+pin_name4 => inst2.IN2
+pin_name4 => inst6.IN0
+pin_name1 => inst2.IN0
+pin_name1 => inst4.IN0
+pin_name1 => inst3.IN0
+
+
+|MAIN|C1:inst15
+C1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => inst8.IN0
+pin_name1 => inst3.IN0
+pin_name1 => inst4.IN0
+pin_name1 => inst10.IN0
+pin_name2 => inst9.IN0
+pin_name2 => inst4.IN1
+pin_name3 => gdfx_temp0.IN0
+pin_name4 => gdfx_temp0.IN1
+
+
+|MAIN|C2:inst16
+pin_name4 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => inst16.IN0
+pin_name1 => inst15.IN0
+pin_name1 => inst12.IN0
+pin_name2 => inst17.IN0
+pin_name2 => inst13.IN0
+pin_name2 => inst14.IN0
+pin_name2 => inst.IN0
+pin_name2 => inst1.IN1
+pin_name5 => inst4.IN2
+pin_name5 => inst2.IN2
+pin_name5 => inst10.IN0
+pin_name3 => inst2.IN1
+pin_name3 => inst3.IN2
+pin_name3 => inst.IN1
+pin_name3 => inst11.IN0
+
+
+|MAIN|C3:inst17
+pin_name1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 => inst.IN0
+pin_name2 => inst7.IN0
+pin_name2 => inst6.IN0
+pin_name2 => inst5.IN0
+pin_name4 => inst9.IN1
+pin_name4 => inst1.IN0
+pin_name3 => inst4.IN0
+pin_name3 => inst2.IN0
+pin_name3 => inst8.IN1
+pin_name5 => inst3.IN0
+pin_name5 => inst8.IN2
+
+
+|MAIN|C4:inst18
+pin_name5 <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 => inst5.IN0
+pin_name2 => inst7.IN0
+pin_name2 => inst1.IN0
+pin_name2 => inst4.IN1
+pin_name2 => inst9.IN0
+pin_name3 => inst.IN1
+pin_name3 => inst1.IN1
+pin_name3 => inst8.IN0
+pin_name3 => inst3.IN2
+pin_name4 => inst.IN2
+pin_name4 => inst2.IN2
+pin_name4 => inst6.IN0
+pin_name1 => inst2.IN0
+pin_name1 => inst4.IN0
+pin_name1 => inst3.IN0
+
+

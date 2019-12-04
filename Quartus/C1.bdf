@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 40 200 208 216)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "pin_name2" (rect 5 0 59 12)(font "Arial" ))
+	(text "pin_name2" (rect 5 0 58 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 40 272 208 288)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "pin_name3" (rect 5 0 59 12)(font "Arial" ))
+	(text "pin_name3" (rect 5 0 58 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -71,7 +71,7 @@ applicable agreement for further details.
 	(input)
 	(rect 40 320 208 336)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "pin_name4" (rect 5 0 59 12)(font "Arial" ))
+	(text "pin_name4" (rect 5 0 58 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -567,14 +567,6 @@ applicable agreement for further details.
 	(pt 248 504)
 )
 (connector
-	(pt 248 328)
-	(pt 248 384)
-)
-(connector
-	(pt 248 384)
-	(pt 248 504)
-)
-(connector
 	(pt 416 152)
 	(pt 416 256)
 )
@@ -627,24 +619,8 @@ applicable agreement for further details.
 	(pt 1088 320)
 )
 (connector
-	(pt 496 384)
-	(pt 312 384)
-)
-(connector
-	(pt 312 384)
-	(pt 248 384)
-)
-(connector
 	(pt 312 280)
 	(pt 312 360)
-)
-(connector
-	(pt 312 360)
-	(pt 312 384)
-)
-(connector
-	(pt 312 384)
-	(pt 312 472)
 )
 (connector
 	(pt 208 328)
@@ -678,7 +654,22 @@ applicable agreement for further details.
 	(pt 416 152)
 	(pt 496 152)
 )
-(junction (pt 248 384))
+(connector
+	(pt 312 360)
+	(pt 312 472)
+)
+(connector
+	(pt 496 384)
+	(pt 248 384)
+)
+(connector
+	(pt 248 328)
+	(pt 248 384)
+)
+(connector
+	(pt 248 384)
+	(pt 248 504)
+)
 (junction (pt 312 360))
 (junction (pt 416 256))
 (junction (pt 416 344))
@@ -686,4 +677,4 @@ applicable agreement for further details.
 (junction (pt 360 208))
 (junction (pt 312 280))
 (junction (pt 248 328))
-(junction (pt 312 384))
+(junction (pt 248 384))

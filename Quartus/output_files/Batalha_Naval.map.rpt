@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Batalha_Naval
-Mon Dec 02 18:51:25 2019
+Tue Dec 03 14:35:28 2019
 Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
 
 
@@ -10,7 +10,12 @@ Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Elapsed Time Per Partition
+ 10. Analysis & Synthesis Messages
 
 
 
@@ -36,20 +41,20 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Dec 02 18:51:25 2019          ;
+; Analysis & Synthesis Status        ; Successful - Tue Dec 03 14:35:28 2019      ;
 ; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
 ; Revision Name                      ; Batalha_Naval                              ;
 ; Top-level Entity Name              ; MAIN                                       ;
 ; Family                             ; Cyclone II                                 ;
-; Total logic elements               ; N/A until Partition Merge                  ;
-;     Total combinational functions  ; N/A until Partition Merge                  ;
-;     Dedicated logic registers      ; N/A until Partition Merge                  ;
-; Total registers                    ; N/A until Partition Merge                  ;
-; Total pins                         ; N/A until Partition Merge                  ;
-; Total virtual pins                 ; N/A until Partition Merge                  ;
-; Total memory bits                  ; N/A until Partition Merge                  ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
-; Total PLLs                         ; N/A until Partition Merge                  ;
+; Total logic elements               ; 15                                         ;
+;     Total combinational functions  ; 15                                         ;
+;     Dedicated logic registers      ; 0                                          ;
+; Total registers                    ; 0                                          ;
+; Total pins                         ; 19                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
 +------------------------------------+--------------------------------------------+
 
 
@@ -149,13 +154,98 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                               ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                     ; Library ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------+---------+
+; C1.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Desktop/Trabalho-Final-CD-master/Quartus/C1.bdf   ;         ;
+; C2.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Desktop/Trabalho-Final-CD-master/Quartus/C2.bdf   ;         ;
+; C3.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Desktop/Trabalho-Final-CD-master/Quartus/C3.bdf   ;         ;
+; C4.bdf                           ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Desktop/Trabalho-Final-CD-master/Quartus/C4.bdf   ;         ;
+; MAIN.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/aluno/Desktop/Trabalho-Final-CD-master/Quartus/MAIN.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 15    ;
+;                                             ;       ;
+; Total combinational functions               ; 15    ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 13    ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 2     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 15    ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 19    ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+; Maximum fan-out node                        ; SW[3] ;
+; Maximum fan-out                             ; 4     ;
+; Total fan-out                               ; 62    ;
+; Average fan-out                             ; 1.82  ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |MAIN                      ; 15 (7)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 19   ; 0            ; |MAIN               ;              ;
+;    |C1:inst15|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|C1:inst15     ;              ;
+;    |C1:inst19|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|C1:inst19     ;              ;
+;    |C2:inst16|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|C2:inst16     ;              ;
+;    |C2:inst20|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|C2:inst20     ;              ;
+;    |C3:inst17|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|C3:inst17     ;              ;
+;    |C3:inst21|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|C3:inst21     ;              ;
+;    |C4:inst18|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|C4:inst18     ;              ;
+;    |C4:inst22|             ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |MAIN|C4:inst22     ;              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
-    Info: Processing started: Mon Dec 02 18:51:24 2019
+    Info: Processing started: Tue Dec 03 14:35:27 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Batalha_Naval -c Batalha_Naval
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file c1.bdf
@@ -173,21 +263,16 @@ Info (12128): Elaborating entity "C1" for hierarchy "C1:inst19"
 Info (12128): Elaborating entity "C2" for hierarchy "C2:inst20"
 Info (12128): Elaborating entity "C3" for hierarchy "C3:inst21"
 Info (12128): Elaborating entity "C4" for hierarchy "C4:inst22"
-Error (12014): Net "gdfx_temp0", which fans out to "C4:inst22|pin_name1", cannot be assigned more than one value
-    Error (12015): Net is fed by "inst24"
-    Error (12015): Net is fed by "inst26"
-    Error (12015): Net is fed by "inst27"
-    Error (12015): Net is fed by "inst25"
-Error (12014): Net "C1:inst15|gdfx_temp0", which fans out to "C1:inst15|inst3", cannot be assigned more than one value
-    Error (12015): Net is fed by "C1:inst15|pin_name3"
-    Error (12015): Net is fed by "C1:inst15|pin_name4"
-Error (12014): Net "C1:inst19|gdfx_temp0", which fans out to "C1:inst19|inst3", cannot be assigned more than one value
-    Error (12015): Net is fed by "C1:inst19|pin_name3"
-    Error (12015): Net is fed by "C1:inst19|pin_name4"
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 11 errors, 1 warning
-    Error: Peak virtual memory: 4594 megabytes
-    Error: Processing ended: Mon Dec 02 18:51:25 2019
-    Error: Elapsed time: 00:00:01
-    Error: Total CPU time (on all processors): 00:00:01
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 34 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
+    Info (21059): Implemented 6 output pins
+    Info (21061): Implemented 15 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4621 megabytes
+    Info: Processing ended: Tue Dec 03 14:35:28 2019
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
 
 

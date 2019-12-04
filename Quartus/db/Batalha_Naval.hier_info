@@ -1,0 +1,185 @@
+|MAIN
+LEDG[5] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[6] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+LEDG[7] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+SW[1] => inst11.IN0
+SW[1] => inst12.IN0
+SW[2] => C1:inst19.pin_name4
+SW[2] => C2:inst20.pin_name5
+SW[2] => C3:inst21.pin_name5
+SW[2] => C4:inst22.pin_name4
+SW[3] => C1:inst19.pin_name3
+SW[3] => C2:inst20.pin_name3
+SW[3] => C3:inst21.pin_name4
+SW[3] => C4:inst22.pin_name3
+SW[4] => C1:inst19.pin_name2
+SW[4] => C2:inst20.pin_name2
+SW[4] => C3:inst21.pin_name3
+SW[4] => C4:inst22.pin_name2
+SW[5] => C1:inst19.pin_name1
+SW[5] => C2:inst20.pin_name1
+SW[5] => C3:inst21.pin_name2
+SW[5] => C4:inst22.pin_name1
+SW[6] => C1:inst15.pin_name4
+SW[6] => C2:inst16.pin_name5
+SW[6] => C3:inst17.pin_name5
+SW[6] => C4:inst18.pin_name4
+SW[7] => C1:inst15.pin_name3
+SW[7] => C2:inst16.pin_name3
+SW[7] => C3:inst17.pin_name4
+SW[7] => C4:inst18.pin_name3
+SW[8] => C1:inst15.pin_name2
+SW[8] => C2:inst16.pin_name2
+SW[8] => C3:inst17.pin_name3
+SW[8] => C4:inst18.pin_name2
+SW[9] => C1:inst15.pin_name1
+SW[9] => C2:inst16.pin_name1
+SW[9] => C3:inst17.pin_name2
+SW[9] => C4:inst18.pin_name1
+KEY[0] => inst33.IN0
+KEY[1] => inst32.IN0
+KEY[2] => inst23.IN0
+KEY[3] => inst14.IN0
+LEDR[0] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|MAIN|C1:inst19
+C1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => inst8.IN0
+pin_name1 => inst3.IN0
+pin_name1 => inst4.IN0
+pin_name1 => inst10.IN0
+pin_name2 => inst9.IN0
+pin_name2 => inst4.IN1
+pin_name3 => inst3.IN1
+pin_name3 => inst6.IN0
+pin_name3 => inst2.IN1
+pin_name4 => inst7.IN0
+pin_name4 => inst4.IN3
+pin_name4 => inst2.IN2
+
+
+|MAIN|C2:inst20
+pin_name4 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => inst16.IN0
+pin_name1 => inst15.IN0
+pin_name1 => inst12.IN0
+pin_name2 => inst17.IN0
+pin_name2 => inst13.IN0
+pin_name2 => inst14.IN0
+pin_name2 => inst.IN0
+pin_name2 => inst1.IN1
+pin_name5 => inst4.IN2
+pin_name5 => inst2.IN2
+pin_name5 => inst10.IN0
+pin_name3 => inst2.IN1
+pin_name3 => inst3.IN2
+pin_name3 => inst.IN1
+pin_name3 => inst11.IN0
+
+
+|MAIN|C3:inst21
+pin_name1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 => inst.IN0
+pin_name2 => inst7.IN0
+pin_name2 => inst6.IN0
+pin_name2 => inst5.IN0
+pin_name4 => inst9.IN1
+pin_name4 => inst1.IN0
+pin_name3 => inst4.IN0
+pin_name3 => inst2.IN0
+pin_name3 => inst8.IN1
+pin_name5 => inst3.IN0
+pin_name5 => inst8.IN2
+
+
+|MAIN|C4:inst22
+pin_name5 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 => inst5.IN0
+pin_name2 => inst7.IN0
+pin_name2 => inst1.IN0
+pin_name2 => inst9.IN0
+pin_name2 => inst4.IN1
+pin_name3 => inst.IN1
+pin_name3 => inst1.IN1
+pin_name3 => inst3.IN2
+pin_name3 => inst8.IN0
+pin_name4 => inst.IN2
+pin_name4 => inst2.IN2
+pin_name4 => inst6.IN0
+pin_name1 => inst2.IN0
+pin_name1 => inst3.IN0
+pin_name1 => inst4.IN0
+
+
+|MAIN|C1:inst15
+C1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => inst8.IN0
+pin_name1 => inst3.IN0
+pin_name1 => inst4.IN0
+pin_name1 => inst10.IN0
+pin_name2 => inst9.IN0
+pin_name2 => inst4.IN1
+pin_name3 => inst3.IN1
+pin_name3 => inst6.IN0
+pin_name3 => inst2.IN1
+pin_name4 => inst7.IN0
+pin_name4 => inst4.IN3
+pin_name4 => inst2.IN2
+
+
+|MAIN|C2:inst16
+pin_name4 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+pin_name1 => inst16.IN0
+pin_name1 => inst15.IN0
+pin_name1 => inst12.IN0
+pin_name2 => inst17.IN0
+pin_name2 => inst13.IN0
+pin_name2 => inst14.IN0
+pin_name2 => inst.IN0
+pin_name2 => inst1.IN1
+pin_name5 => inst4.IN2
+pin_name5 => inst2.IN2
+pin_name5 => inst10.IN0
+pin_name3 => inst2.IN1
+pin_name3 => inst3.IN2
+pin_name3 => inst.IN1
+pin_name3 => inst11.IN0
+
+
+|MAIN|C3:inst17
+pin_name1 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 => inst.IN0
+pin_name2 => inst7.IN0
+pin_name2 => inst6.IN0
+pin_name2 => inst5.IN0
+pin_name4 => inst9.IN1
+pin_name4 => inst1.IN0
+pin_name3 => inst4.IN0
+pin_name3 => inst2.IN0
+pin_name3 => inst8.IN1
+pin_name5 => inst3.IN0
+pin_name5 => inst8.IN2
+
+
+|MAIN|C4:inst18
+pin_name5 <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+pin_name2 => inst5.IN0
+pin_name2 => inst7.IN0
+pin_name2 => inst1.IN0
+pin_name2 => inst9.IN0
+pin_name2 => inst4.IN1
+pin_name3 => inst.IN1
+pin_name3 => inst1.IN1
+pin_name3 => inst3.IN2
+pin_name3 => inst8.IN0
+pin_name4 => inst.IN2
+pin_name4 => inst2.IN2
+pin_name4 => inst6.IN0
+pin_name1 => inst2.IN0
+pin_name1 => inst3.IN0
+pin_name1 => inst4.IN0
+
+
